@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="daily_report_system" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://b9913a8d198e75:13f57c63@us-cdbr-east-02.cleardb.com/heroku_58bf8f7636c4454?reconnect=true"/>
+			<property name="javax.persistence.jdbc.user" value="b9913a8d198e75"/>
+			<property name="javax.persistence.jdbc.password" value="13f57c63"/>
+			<property name="javax.persistence.schema-generation.database.action" value="none"/>
+			<property name="javax.persistence.schema-generation.scripts.action" value="none"/>
+		</properties>
+	</persistence-unit>
+</persistence>
