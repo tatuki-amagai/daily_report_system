@@ -4,11 +4,13 @@
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://b9913a8d198e75:13f57c63@us-cdbr-east-02.cleardb.com/heroku_58bf8f7636c4454?reconnect=true"/>
-			<property name="javax.persistence.jdbc.user" value="b9913a8d198e75"/>
-			<property name="javax.persistence.jdbc.password" value="13f57c63"/>
-			<property name="javax.persistence.schema-generation.database.action" value="none"/>
-			<property name="javax.persistence.schema-generation.scripts.action" value="none"/>
+			<property name="javax.persistence.schema-generation.database.action" value="create"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/daily_report_system?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8"/>
+			<property name="javax.persistence.jdbc.user" value="repuser"/>
+			<property name="javax.persistence.jdbc.password" value="reppass"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.format_sql	" value="true"/>
 		</properties>
 	</persistence-unit>
 </persistence>
