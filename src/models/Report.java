@@ -40,7 +40,6 @@ public class Report {
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
     @ManyToOne
     @JoinColumn(name = "employee_id", nullable = false)
     private Employee employee;
@@ -54,6 +53,12 @@ public class Report {
     @Lob
     @Column(name = "content", nullable = false)
     private String content;
+
+//    @Column(name = "start_time", length = 255, nullable = false)
+//    private Time start_time;
+//
+//    @Column(name = "end_time", length = 255, nullable = false)
+//    private Time end_time;
 
     @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
@@ -100,6 +105,21 @@ public class Report {
     public void setContent(String content) {
         this.content = content;
     }
+//    public Time getStart_time() {
+//        return start_time;
+//    }
+//
+//    public void setStart_time(Time start_time) {
+//        this.start_time = start_time;
+//    }
+//
+//    public Time getEnd_time() {
+//        return end_time;
+//    }
+//
+//    public void setEnd_time(Time end_time) {
+//        this.end_time = end_time;
+//    }
 
     public Timestamp getCreated_at() {
         return created_at;
